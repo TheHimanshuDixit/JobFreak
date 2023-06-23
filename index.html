@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Job Freak </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar open">
+        <div class="logo-details">
+            <i class='bx bxs-shopping-bag icon'></i>
+            <div class="logo_name">Job Freak</div>
+            <i class='bx bx-menu-alt-right' id="btn"></i>
+        </div>
+        <ul class="nav-list controls">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#" class="control active-btn" data-id="home">
+                    <i class='bx bx-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#" class="control active-btn" data-id="about">
+                    <i class='bx bx-message-rounded-error'></i>
+                    <span class="links_name">About</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+            <li>
+                <a href="#" class="control" data-id="contact">
+                    <i class='bx bxs-contact'></i>
+                    <span class="links_name">Contact Us</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+            <li>
+                <a href="#" class="control" data-id="info">
+                    <i class='bx bx-info-circle'></i>
+                    <span class="links_name">Information</span>
+                </a>
+                <span class="tooltip">Information</span>
+            </li>
+            <li>
+                <a href="#" class="control" data-id="guide">
+                    <i class='bx bx-book-reader'></i>
+                    <span class="links_name">Guide</span>
+                </a>
+                <span class="tooltip">Guide</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <div class="name_job">
+                        <div class="name">Himanshu</div>
+                        <div class="job">(Web developer)</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div id="home" class="text active">
+            <h1 class="heading">Home</h1>
+            <div class="homecontent">
+                <img src="/image.png" alt="">
+                <div>
+                    <p class="pc1">
+                        <span style="color: rgb(46, 162, 46);">Get Updates</span> for Jobs and Internships openings from
+                        different companies
+                    </p>
+                    <p class="pc2">
+                        We are Here for you ! ! !
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="text">
+            <h1 class="heading">About</h1>
+            <div class="aboutcontent">
+                At Job Freak We Post daily updates on internships and jobs postings ! !
+                Our aim is to empower the youth of our country and make them Self-dependent. By providing them
+                job/internships all kinds of opportunities from various sectors, sharing knowledge and make them
+                competent enough so that they could excel in any field. If you have any query regrading Site,
+                Advertisement and any other issue, please feel free to
+                contact at our email random@gmail.com
+            </div>
+        </div>
+        <div id="contact" class="text">
+            <h1 class="heading">Contact Us</h1>
+            <form action="" class="contactform">
+                <div class="contact_name">
+                    <div class="fname">
+                        <input class="psh" type="text" placeholder="First Name">
+                    </div>
+                    <div class="fname">
+                        <input class="psh" type="text" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="email">
+                    <input class="psh" type="email" placeholder="Email">
+                </div>
+                <div class="message">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter here..."></textarea>
+                </div>
+                <div class="btnnn">
+                    <input class="psh" type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+        <div id="info" class="text">
+            <h1 class="heading">Information</h1>
+            <div class="infocontent">
+                <h3 class="infoh3">All Information related to job shown here!</h3>
+                <p class="infop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi facilis ut, veniam
+                    expedita vero,
+                    dolore similique quaerat omnis cumque ducimus, velit doloribus! Alias hic voluptatem laborum minus,
+                    pariatur similique voluptatibus qui? Architecto quibusdam nostrum sunt. Veritatis delectus soluta
+                    corrupti, cupiditate autem eos, tenetur unde sunt id illum minus aperiam magni.</p>
+            </div>
+        </div>
+        <div id="guide" class="text">
+            <h1 class="heading">Guide</h1>
+            <div class="guidecontent">
+                <h3 class="guideh3">Follow this guide and get Job/Internship!</h3>
+                <ul class="guidelist">
+                    <li class="gli">Lorem ipsum dolor sit amet.</li>
+                    <li class="gli">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                    <li class="gli">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quia?</li>
+                    <li class="gli">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div>Coyright &copy; 2023 Job Freak | All Right Reserved</div>
+            <div>
+                <a href="#">TERMS & CONDITIONS</a><span>|</span>
+                <a href="#">PRIVACY POLICY</a><span>|</span>
+                <a href="#">DMCA</a><span>|</span>
+            </div>
+        </footer>
+    </section>
+    <script>
+        const mediaQuery = window.matchMedia('(max-width: 500px)')
+        // Check if the media query is true
+        if (mediaQuery.matches) {
+            document.querySelector(".sidebar").classList.remove("open");
+            document.querySelector("#btn").classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();//calling the function(optional)
+        });
+
+        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
+
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+            }
+        }
+        (function () {
+            [...document.querySelectorAll(".control")].forEach(button => {
+                button.addEventListener("click", function () {
+                    document.querySelector(".active-btn").classList.remove("active-btn");
+                    this.classList.add("active-btn");
+                    document.querySelector(".active").classList.remove("active");
+                    document.getElementById(button.dataset.id).classList.add("active");
+                })
+            });
+        })();
+    </script>
+</body>
+
+</html>
