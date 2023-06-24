@@ -520,5 +520,6 @@ footer {
     footer {
         width: 90%;
         bottom: 15px;
+        font-size: 10px;
     }
 }
